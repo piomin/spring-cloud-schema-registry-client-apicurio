@@ -27,3 +27,14 @@ The default address of schema registry server is http://localhost:8081. You can 
 ```properties
 spring.cloud.schemaRegistryClient.endpoint=http://example-apicurioregistry-service:8080/
 ```
+
+## Concept
+You may find an introductory article to Spring Cloud Schema Registry and Spring Cloud Stream with Confluent Registry and Kafka in this article [Spring Cloud Stream with Schema Registry and Kafka](https://piotrminkowski.com/2021/07/22/spring-cloud-stream-with-schema-registry-and-kafka/).
+
+A typical architecture of our solution is visible below. In general, in EDA (event-driven architecture) we may need a tools for messages schema validation and evolving. \
+Spring Cloud Schema Register implements this approach. The concept is pretty simple. On the producer side client registers a new version of schema (by default in Apache Avro format) using REST API provided by the schema server. \
+A consumer receives a message with subject name and schema version in the `ContentType` header. Then it retrieves a schema from schema registry server and deserializes a message. \
+
+<img src="https://i2.wp.com/piotrminkowski.com/wp-content/uploads/2021/07/spring-cloud-stream-kafka-schema-registry.png?resize=696%2C441&ssl=1" title="Architecture"><br/>
+
+Apicurio provides REST API for interaction with registry server. The current version of Apicurio REST API is 2.0.1 is described [here](https://www.apicur.io/registry/docs/apicurio-registry/2.0.1.Final/assets-attachments/registry-rest-api.htm).
