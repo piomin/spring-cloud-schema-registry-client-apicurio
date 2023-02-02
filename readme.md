@@ -1,4 +1,12 @@
-# Apicurio client for Spring Cloud Schema Registry
+# Apicurio client for Spring Cloud Schema Registry [![Twitter](https://img.shields.io/twitter/follow/piotr_minkowski.svg?style=social&logo=twitter&label=Follow%20Me)](https://twitter.com/piotr_minkowski)
+
+[![CircleCI](https://circleci.com/gh/piomin/spring-cloud-schema-registry-client-apicurio.svg?style=svg)](https://circleci.com/gh/piomin/spring-cloud-schema-registry-client-apicurio)
+
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-black.svg)](https://sonarcloud.io/dashboard?id=piomin_spring-cloud-schema-registry-client-apicurio)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=piomin_spring-cloud-schema-registry-client-apicurio&metric=bugs)](https://sonarcloud.io/dashboard?id=piomin_spring-cloud-schema-registry-client-apicurio)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=piomin_spring-cloud-schema-registry-client-apicurio&metric=coverage)](https://sonarcloud.io/dashboard?id=piomin_spring-cloud-schema-registry-client-apicurio)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=piomin_spring-cloud-schema-registry-client-apicurio&metric=ncloc)](https://sonarcloud.io/dashboard?id=piomin_spring-cloud-schema-registry-client-apicurio)
+
 The aim of this project is to add support for [Apicurio Registry](https://www.apicur.io/registry/) in [Spring Cloud Schema Registry](https://spring.io/projects/spring-cloud-schema-registry). \
 Currently Spring cloud Schema Registry supports Confluent Schema Registry and Spring Schema Registry Server (by default). You may read more about Spring Cloud Schema Registry in their [documentation](https://docs.spring.io/spring-cloud-schema-registry/docs/1.1.3-SNAPSHOT/reference/html/spring-cloud-schema-registry.html). \
 Then you can the library with event-driven communication with Spring Cloud Stream and one of the message brokers supported by Spring Cloud Stream, e.g. Kafka or RabbitMQ.
