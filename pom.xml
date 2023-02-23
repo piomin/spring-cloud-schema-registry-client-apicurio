@@ -22,7 +22,7 @@
     <properties>
         <java.version>17</java.version>
         <spring-cloud-schema.version>1.1.5</spring-cloud-schema.version>
-        <spring-boot.version>2.7.8</spring-boot.version>
+        <spring-boot.version>2.7.9</spring-boot.version>
         <sonar.projectKey>piomin_spring-cloud-schema-registry-client-apicurio</sonar.projectKey>
         <sonar.organization>piomin</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
