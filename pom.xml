@@ -30,7 +30,7 @@
     <properties>
         <java.version>21</java.version>
         <spring-cloud-schema.version>1.1.5</spring-cloud-schema.version>
-        <spring-boot.version>3.2.3</spring-boot.version>
+        <spring-boot.version>3.2.4</spring-boot.version>
         <spring.version>6.0.13</spring.version>
         <slf4j.version>2.0.12</slf4j.version>
         <sonar.projectKey>piomin_spring-cloud-schema-registry-client-apicurio</sonar.projectKey>
