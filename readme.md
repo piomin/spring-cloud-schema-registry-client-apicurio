@@ -1,5 +1,6 @@
 # Apicurio client for Spring Cloud Schema Registry [![Twitter](https://img.shields.io/twitter/follow/piotr_minkowski.svg?style=social&logo=twitter&label=Follow%20Me)](https://twitter.com/piotr_minkowski)
 
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.piomin/logstash-logging-spring-boot-starter/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.piomin/spring-cloud-schema-registry-client-apicurio)
 [![CircleCI](https://circleci.com/gh/piomin/spring-cloud-schema-registry-client-apicurio.svg?style=svg)](https://circleci.com/gh/piomin/spring-cloud-schema-registry-client-apicurio)
 
 [![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-black.svg)](https://sonarcloud.io/dashboard?id=piomin_spring-cloud-schema-registry-client-apicurio)
@@ -17,10 +18,10 @@ You just need to include the following dependency to your project.
 <dependency>
     <groupId>com.github.piomin</groupId>
     <artifactId>spring-cloud-schema-registry-client-apicurio</artifactId>
-    <version>1.0</version>
+    <version>1.2.0</version>
 </dependency>
 ```
-Before that add Jitpack to your build file to support loading artifacts directly from GitHub.
+You can also use Jitpack to get the artifact from GitHub Releases directly. Before that add Jitpack to your build file to support loading artifacts directly from GitHub.
 ```xml
 <repositories>
     <repository>
