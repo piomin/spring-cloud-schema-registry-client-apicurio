@@ -6,7 +6,7 @@
 
     <groupId>com.github.piomin</groupId>
     <artifactId>spring-cloud-schema-registry-client-apicurio</artifactId>
-    <version>1.2.0</version>
+    <version>1.3.0</version>
     <name>spring-cloud-schema-registry-client-apicurio</name>
     <description>Spring Cloud Schema Registry Client for Apicurio</description>
     <url>https://github.com/piomin/spring-cloud-schema-registry-client-apicurio</url>
@@ -29,9 +29,9 @@
 
     <properties>
         <java.version>21</java.version>
-        <spring-cloud-schema.version>1.1.5</spring-cloud-schema.version>
+        <spring-cloud-schema.version>4.1.1</spring-cloud-schema.version>
         <spring-boot.version>3.2.5</spring-boot.version>
-        <spring.version>6.0.13</spring.version>
+        <spring.version>6.1.6</spring.version>
         <slf4j.version>2.0.13</slf4j.version>
         <sonar.projectKey>piomin_spring-cloud-schema-registry-client-apicurio</sonar.projectKey>
         <sonar.organization>piomin</sonar.organization>
@@ -58,7 +58,7 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-schema-registry-client</artifactId>
+            <artifactId>spring-cloud-stream-schema-registry-client</artifactId>
             <version>${spring-cloud-schema.version}</version>
         </dependency>
         <dependency>
@@ -66,6 +66,11 @@
             <artifactId>spring-boot-starter</artifactId>
             <version>${spring-boot.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-json</artifactId>
+            <version>${spring-boot.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

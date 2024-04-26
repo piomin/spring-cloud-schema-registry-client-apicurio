@@ -1,2 +1,2 @@
-org.springframework.cloud.schema.registry.avro.AvroMessageConverterAutoConfiguration
+org.springframework.cloud.stream.schema.registry.avro.AvroMessageConverterAutoConfiguration
 org.springframework.cloud.schema.apicurio.client.config.SchemaRegistryClientApicurioAutoConfiguration
