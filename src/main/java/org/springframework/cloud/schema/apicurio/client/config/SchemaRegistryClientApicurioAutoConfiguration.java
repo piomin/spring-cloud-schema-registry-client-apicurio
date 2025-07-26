@@ -38,10 +38,10 @@ public class SchemaRegistryClientApicurioAutoConfiguration {
 		return RestClient.create();
 	}
 
-	@Bean
-	@ConditionalOnMissingBean
-	public ApicurioSchemaRegistryClient apicurioSchemaRegistryClient(RestClient restClient, SchemaRegistryClientProperties properties) {
-		return new ApicurioSchemaRegistryClient(restClient, properties);
-	}
+//	@Bean
+//	@ConditionalOnMissingBean
+//	public ApicurioSchemaRegistryClient apicurioSchemaRegistryClient(RestClient restClient, SchemaRegistryClientProperties properties) {
+//		return new ApicurioSchemaRegistryClient(restClient, properties);
+//	}
 
 }
