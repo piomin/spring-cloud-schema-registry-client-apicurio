@@ -27,8 +27,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestClient;
 
 @AutoConfiguration
-@ConditionalOnClass(RestClient.class)
-@EnableConfigurationProperties({ SchemaRegistryClientProperties.class })
+//@ConditionalOnClass(RestClient.class)
+//@EnableConfigurationProperties({ SchemaRegistryClientProperties.class })
 //@ConditionalOnProperty(value = "spring.cloud.stream.schema.registry.type", havingValue = "apicurio")
 public class SchemaRegistryClientApicurioAutoConfiguration {
 
