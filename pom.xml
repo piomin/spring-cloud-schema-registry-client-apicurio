@@ -29,7 +29,7 @@
 
     <properties>
         <java.version>21</java.version>
-        <spring-cloud-schema.version>4.3.1</spring-cloud-schema.version>
+        <spring-cloud-schema.version>5.0.0</spring-cloud-schema.version>
         <spring-boot.version>3.5.9</spring-boot.version>
         <spring.version>6.2.15</spring.version>
         <slf4j.version>2.0.17</slf4j.version>
