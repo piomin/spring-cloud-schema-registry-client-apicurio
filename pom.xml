@@ -6,7 +6,7 @@
 
     <groupId>com.github.piomin</groupId>
     <artifactId>spring-cloud-schema-registry-client-apicurio</artifactId>
-    <version>1.4.0-SNAPSHOT</version>
+    <version>2.0.0-SNAPSHOT</version>
     <name>spring-cloud-schema-registry-client-apicurio</name>
     <description>Spring Cloud Schema Registry Client for Apicurio</description>
     <url>https://github.com/piomin/spring-cloud-schema-registry-client-apicurio</url>
@@ -29,7 +29,7 @@
 
     <properties>
         <java.version>21</java.version>
-        <spring-cloud-schema.version>4.3.1</spring-cloud-schema.version>
+        <spring-cloud-schema.version>5.0.0</spring-cloud-schema.version>
         <spring-boot.version>4.0.1</spring-boot.version>
         <spring.version>7.0.2</spring.version>
         <slf4j.version>2.0.17</slf4j.version>
@@ -43,17 +43,6 @@
         <developerConnection>scm:git:git@github.com:piomin/spring-cloud-schema-registry-client-apicurio.git</developerConnection>
         <url>https://github.com/piomin/spring-cloud-schema-registry-client-apicurio</url>
     </scm>
-
-    <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-    </distributionManagement>
 
     <dependencies>
         <dependency>
@@ -104,7 +93,7 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.5.22</version>
+            <version>1.5.24</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -115,7 +104,7 @@
         <dependency>
             <groupId>org.testcontainers</groupId>
             <artifactId>testcontainers</artifactId>
-            <version>1.21.4</version>
+            <version>2.0.3</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -177,9 +166,25 @@
             <build>
                 <plugins>
                     <plugin>
+                        <groupId>org.sonatype.central</groupId>
+                        <artifactId>central-publishing-maven-plugin</artifactId>
+                        <version>0.10.0</version>
+                        <extensions>true</extensions>
+                        <configuration>
+                            <publishingServerId>central</publishingServerId>
+                            <autoPublish>true</autoPublish>
+                        </configuration>
+                    </plugin>
+                    <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
                         <version>3.2.8</version>
+                        <configuration>
+                            <gpgArguments>
+                                <arg>--pinentry-mode</arg>
+                                <arg>loopback</arg>
+                            </gpgArguments>
+                        </configuration>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
