@@ -46,4 +46,4 @@ A consumer receives a message with subject name and schema version in the `Conte
 
 <img src="https://i2.wp.com/piotrminkowski.com/wp-content/uploads/2021/07/spring-cloud-stream-kafka-schema-registry.png?resize=696%2C441&ssl=1" title="Architecture"><br/>
 
-Apicurio provides REST API for interaction with registry server. The current version of Apicurio REST API is 2.0.1 is described [here](https://www.apicur.io/registry/docs/apicurio-registry/2.0.1.Final/assets-attachments/registry-rest-api.htm).
+Apicurio provides REST API for interaction with registry server. The current version of Apicurio REST API is 2.0.1 is described [here](https://www.apicur.io/registry/docs/apicurio-registry/3.0.x/assets-attachments/registry-rest-api.htm).
