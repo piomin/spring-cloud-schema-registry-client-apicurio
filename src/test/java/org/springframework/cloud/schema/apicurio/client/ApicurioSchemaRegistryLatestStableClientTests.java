@@ -41,7 +41,7 @@ public class ApicurioSchemaRegistryLatestStableClientTests {
         """;
 
     @Container
-    static final GenericContainer apicurio = new GenericContainer("apicurio/apicurio-registry-mem:2.6.13.Final")
+    static final GenericContainer apicurio = new GenericContainer("apicurio/apicurio-registry:3.1.6")
             .withExposedPorts(8080);
 
 

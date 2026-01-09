@@ -18,7 +18,7 @@ You just need to include the following dependency to your project.
 <dependency>
     <groupId>com.github.piomin</groupId>
     <artifactId>spring-cloud-schema-registry-client-apicurio</artifactId>
-    <version>1.4.0</version>
+    <version>2.0.0</version>
 </dependency>
 ```
 You can also use Jitpack to get the artifact from GitHub Releases directly. Before that add Jitpack to your build file to support loading artifacts directly from GitHub.
